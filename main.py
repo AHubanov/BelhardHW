@@ -6,6 +6,8 @@ personDict["course"] = 1
 for key in personDict:
     print(personDict[key])
 
+#сложность алгоритмся прохода по словарю O(N).
+
 print("---------")
 personDict = {"name": "Alex", "age":18, "course": 1}
 
