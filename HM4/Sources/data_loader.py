@@ -14,6 +14,7 @@ class DataLoader:
             data = json.load(file)
         return pd.DataFrame(data)
 
+    #не использовал
     @staticmethod
     def load_api(url):
         response = requests.get(url)
@@ -22,4 +23,4 @@ class DataLoader:
 
     @staticmethod
     def load_dataset(name):
-        return sns.load_dataset('titanic')
+        return sns.load_dataset(name)
