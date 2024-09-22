@@ -12,7 +12,7 @@ xlsx_to_csv('HM6/Resources/visits.xlsx', 'HM6/Resources/visits.csv')
 #Для Ивана. Нужно определить кодировку и потом с помощью ее прочитать файл и пересохронить. 
 import chardet
 def csv_to_csv(csv_file, encoding_value, csv_file_new, encoding_value_new):
-    df = pd.read_csv(csv_file, encoding=encoding_value)
+    df = pd.read_csv(csv_file, encoding=encoding_value, delimiter = ';')
     df.to_csv('HM6/Resources/data_from_ivan_encoded.csv', index=False, encoding='utf-8')
 
 #читаем при помощи какой-то библиатеки файл и определяем кодировку. В дальнейшем ее будем использовать. Файл сохранен в windows-1251 кодировки.
